@@ -1,0 +1,425 @@
+//  what-our-clients-say section start 
+#what-our-clients-say{
+    background-color: #fdf0e9;
+    text-align: center;
+    .h2{
+        max-width: 394px;
+        color: $text_dark;
+        letter-spacing: -1px;
+        margin: 0 auto;
+        font-weight: 800;
+        
+    }
+    .h5{
+        color: $primary_color;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .card-box{
+        @include flexCenter(center,flex-start);
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        margin-bottom: 65px;
+    }
+    .card{
+        border: 1px solid #F3D1BF;
+        padding:47px;
+        width: 50%;
+        transition: all 500ms;
+        .stars{
+            text-align: start;
+            margin-bottom: 36px;
+            svg{
+                height: 24px;
+                fill: #F6D021;
+            }
+        }
+        p{
+            text-align: start;
+            font-weight: 400;
+            color: $text_dark;
+            text-transform: none;
+            letter-spacing: normal;
+            margin-bottom: 40px;
+            transition: all 500ms;
+        }
+        &:hover{
+            background-color: #fff;
+            p{
+                margin-bottom: 55px;
+            }
+        }
+    }
+    .profil-box{
+        @include flexCenter(start);
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 24px;
+        }
+    }
+    .profil-box_content{
+        color: $text_dark;
+        .profile-name{
+            font-weight: 700;
+        }
+        .profile-title{
+            font-weight: 400;
+            text-align: start;
+            color: $text_dark;
+            text-transform: none;
+        }
+    }
+    button{
+        background-color: $white;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 18px 41px;
+        box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        margin-bottom:108px;
+    }
+}
+@media screen and(max-width:1024px){
+    #what-our-clients-say{
+        .card-box{
+            @include flexCenter(center,flex-start);
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-top: 64px;
+        }
+        .card{
+            width: 100%;
+        }
+        .profil-box{
+            @include flexCenter(start);
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 24px;
+            }
+        }
+        .profil-box_content{
+            color: $text_dark;
+            .profile-name{
+                font-weight: 700;
+            }
+            .profile-title{
+                font-weight: 400;
+                text-align: start;
+                color: $text_dark;
+                text-transform: none;
+            }
+        }
+    }
+}
+//  what-our-clients-say section end 
+// check-our-pricing-plans start
+#check-our-pricing-plans{
+    background-color: #fdf0e9;
+    padding-bottom: 156px;
+    #popularCard{
+        background-color: $white;
+        button{
+            background: #EF6D58;
+            color: $white;
+        }
+    }
+    #popular{
+    height: 38px;
+    width: 92px;
+    background: #EF6D58;
+    border-radius: 19px;
+    box-shadow: none;
+    margin-bottom: 24px;
+    color: $white;
+    font-weight: normal;
+
+    }
+    .h2{
+        max-width: 394px;
+        color: $text_dark;
+        letter-spacing: -1px;
+        font-weight: 800;
+        padding-bottom: 64px;
+        
+    }
+    .h5{
+        color: $primary_color;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .card-box{
+        @include flexCenter(center,flex-end);
+    }
+    .card{
+        flex-grow: 1;
+        width: 33%;
+        border: 1px solid #F3D1BF;
+        border-radius: 6px 0px 0px 6px;
+        padding: 44px;
+        .h3{
+            max-width: 394px;
+            color: $text_dark;
+            letter-spacing: -1px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            
+        }
+        .h5{
+            color: $primary_color;
+            letter-spacing: 3px;
+            margin-bottom: 17px;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        p{
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            color: $text_dark;
+            margin-bottom: 27px;
+        }
+        ul{
+            margin-bottom: 36px;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            color: $text_dark;
+            li{
+                @include flexCenter(start);
+                margin-bottom: 16px;
+                img{
+                    margin-right: 20px;
+                }
+            }
+        }
+        button{
+            width: 154px;
+            height: 48px;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+            border-radius: 6px;
+            font-weight: 900;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and(max-width:1024px){
+    #check-our-pricing-plans{
+        .card-box{
+            @include flexCenter(center,flex-start);
+            flex-direction: column;
+        }
+        .card{
+            flex-grow: 1;
+            width: 100%;
+            border: 1px solid #F3D1BF;
+            border-radius: 6px 0px 0px 6px;
+            padding: 44px;
+            .h3{
+                max-width: 394px;
+                color: $text_dark;
+                letter-spacing: -1px;
+                font-weight: 800;
+                margin-bottom: 15px;
+                
+            }
+            .h5{
+                color: $primary_color;
+                letter-spacing: 3px;
+                margin-bottom: 17px;
+                font-weight: normal;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            p{
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                color: $text_dark;
+                margin-bottom: 27px;
+            }
+            ul{
+                margin-bottom: 36px;
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                color: $text_dark;
+                li{
+                    @include flexCenter(start);
+                    margin-bottom: 16px;
+                    img{
+                        margin-right: 20px;
+                    }
+                }
+            }
+            button{
+                width: 154px;
+                height: 48px;
+                background: #FFFFFF;
+                box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+                border-radius: 6px;
+                font-weight: 900;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// check-our-pricing-plans end
+// faq  start
+#faq{
+    background-color: #fdf0e9;
+    padding-bottom: 156px;
+    
+    h5{
+        color:#EF6D58 ;
+        margin-bottom: 17px;
+    }
+    .faq-box{
+        @include flexCenter(center,baseline);
+    }
+    .frequenly-questions-box{
+        width: 50%;
+        h3{
+            margin-bottom: 31px;
+            max-width:470px ;
+        }
+        p{
+            max-width:470px ;
+            margin-bottom: 29px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba($text_dark,0.64);
+        }
+        button{
+            color: $text_dark;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 36px;
+            padding-left: 0;
+        }
+    }
+    .collapse-box{
+        width: 50%;
+    }
+    .collapse-item{
+        padding: 48px;
+        border: 1px solid #F3D1BF;
+        transition: all 500ms;
+        &:hover{
+            background-color: #fff;
+            p{
+            height: 100px;
+            overflow: hidden;
+            }
+            
+            img{
+                transform: rotate(180deg);
+            }
+            
+        }
+        p{
+            height: 0;
+            overflow: hidden;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba($text_dark,0.64);
+            transition: 500ms
+        }
+    }
+    .collapse-item-header{
+        @include flexCenter(space-between,start);
+        margin-bottom: 17px;
+        cursor: pointer;
+        img{
+            height: 32px;
+            transition: 500ms;
+        }
+    }
+}
+@media screen and(max-width:1024px){
+    #faq{
+        .faq-box{
+            flex-direction: column;
+        }
+        .frequenly-questions-box, .collapse-box{
+            width: 100%;
+        }
+    }
+}
+// faq end
+// our awards start 
+#our-awards{
+    background-color: #fdf0e9;
+    padding-bottom: 112px;
+    h3{
+        text-align: center;
+        color: $text_dark;
+        margin-bottom: 20px;
+    }
+    hr{
+        background: #F3D1BF;
+        margin: 15px 0;
+    }
+    .our-awards-row{
+        @include flexCenter(space-between);
+        .our-awards-row-item{
+            @include flexCenter;
+            color: $text_dark;
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            img{
+                width: 120px;
+                height: 80px;
+                margin-right: 24px;
+            }
+        }
+        .our-awards-row-date{
+            @include flexCenter;
+            color: rgba($text_dark,0.64);
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+        .our-awards-row-award{
+            @include flexCenter;
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+            }
+            img{
+                width: 48px;
+                height: 48px;
+                margin-left: 24px;
+            }
+        }
+        
+    }
+}
+// our awards end 
