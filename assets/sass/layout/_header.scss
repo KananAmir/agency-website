@@ -1,0 +1,21 @@
+#header {
+    background-color: $bg_banner;
+    padding: 1rem 0;
+    .header {
+        @include flexCenter(space-between);
+        nav {
+            @include flexCenter;
+            ul {
+                @include flexCenter;
+                li {
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        margin: 0 3rem;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

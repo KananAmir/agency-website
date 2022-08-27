@@ -141,51 +141,51 @@ html {
   font-family: "Epilogue", sans-serif;
 }
 
-h1 {
+.h1 {
   font-size: 72px;
   line-height: 80px;
 }
 
-h2 {
+.h2 {
   font-size: 56px;
   line-height: 64px;
 }
 
-h3 {
+.h3 {
   font-size: 40px;
   line-height: 48px;
 }
 
-h4 {
+.h4 {
   font-size: 24px;
   line-height: 32px;
 }
 
-h5 {
+.h5 {
   font-size: 16px;
   line-height: 32px;
 }
 
 @media (max-width: 992px) {
-  h1 {
+  .h1 {
     font-size: 56px;
     line-height: 64px;
   }
-  h2 {
+  .h2 {
     font-size: 40px;
     line-height: 48px;
   }
-  h3 {
+  .h3 {
     font-size: 24px;
     line-height: 32px;
   }
-  h4,
-h5 {
+  .h4,
+.h5 {
     font-size: 16px;
     line-height: 32px;
   }
 }
-.primary-btn {
+.btn {
   border-radius: 6px;
   font-size: 14px;
   text-transform: uppercase;
@@ -209,4 +209,30 @@ h5 {
   max-width: 1170px;
   margin: 0 auto;
   box-sizing: content-box;
+}
+
+#header {
+  background-color: #28293e;
+  padding: 1rem 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 3rem;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
