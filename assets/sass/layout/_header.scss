@@ -1,0 +1,15 @@
+#header {
+    background-color: $bg_banner;
+    .header {
+        @include flexCenter(space-between);
+        nav {
+            @include flexCenter;
+            ul {
+                li {
+                    a {
+                    }
+                }
+            }
+        }
+    }
+}
