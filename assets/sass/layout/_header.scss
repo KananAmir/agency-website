@@ -2,6 +2,9 @@
     background-color: $bg_banner;
     padding: 1.6rem 0;
     .header {
+        .logo{
+            cursor: pointer;
+        }
         @include flexCenter(space-between);
         nav {
             @include flexCenter;

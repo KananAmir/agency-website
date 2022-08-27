@@ -83,7 +83,7 @@
     .partners {
         @include flexCenter(space-between);
         flex-wrap: wrap;
-        padding: 8rem 0;
+        padding: 4rem 0 4.5rem;
         border-bottom: 0.1rem solid #f3d1bf;
         img {
             margin: 1rem 1rem 0;
@@ -116,7 +116,7 @@
                 }
                 h2 {
                     color: $text_dark;
-                    margin: 2rem 0;
+                    margin: 1.5rem 0;
                 }
                 .about-sub-title {
                     color: $text_dark;
@@ -128,7 +128,7 @@
                     opacity: 64%;
                     font-size: 1.6rem;
                     line-height: 3.2rem;
-                    margin: 2rem 0 4rem;
+                    margin: 2rem 0 3rem;
                 }
                 .about-us-btn {
                     color: $text_dark;
@@ -142,7 +142,7 @@
     }
     .about-extra-info {
         display: flex;
-        margin: 8rem 0;
+        margin: 8rem 0 6rem;
         .about-info-box {
             border: 1px solid #f3d1bf;
             width: 33.3%;
@@ -165,6 +165,55 @@
                 border-top-right-radius: 6px;
                 border-bottom-right-radius: 6px;
                 border-left: unset;
+            }
+        }
+    }
+}
+#how-we-work {
+    background-color: $bg_color;
+    .how-we-work {
+        display: flex;
+        padding-bottom: 5rem;
+        border-bottom: 0.1rem solid #f3d1bf;
+        .how-we-work-content {
+            width: 50%;
+            .h5 {
+                color: #ef6d58;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 400;
+                margin-bottom: 1.7rem;
+            }
+            .h3 {
+                max-width: 450px;
+                color: $text_dark;
+            }
+            .description {
+                color: $text_dark;
+                opacity: 64%;
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                margin: 3rem 0;
+                max-width: 470px;
+            }
+            .read-more {
+                font-size: 16px;
+                color: $text_dark;
+            }
+        }
+        .how-we-work-features {
+            width: 50%;
+            padding-top: 8rem;
+            .feature {
+                @include flexCenter(flex-start);
+                .h1 {
+                    margin-right: 6.6rem;
+                }
+                &:first-child {
+                    .h4 {
+                        margin-left: 1rem;
+                    }
+                }
             }
         }
     }
@@ -224,7 +273,6 @@
     #about {
         padding: 3rem 0;
         .about {
-            display: flex;
             flex-direction: column;
             .about-image {
                 width: 100%;
@@ -245,7 +293,7 @@
             margin: 4rem 0;
             .about-info-box {
                 width: 100%;
-                padding: 3rem;
+                padding: 2rem;
                 .h3 {
                     margin-bottom: 1.3rem;
                 }
@@ -262,6 +310,24 @@
                     border-bottom-left-radius: 6px;
                     border-bottom-right-radius: 6px;
                     border-left: 1px solid #f3d1bf;
+                }
+            }
+        }
+    }
+    #how-we-work {
+        .how-we-work {
+            padding-bottom: 3rem;
+            flex-direction: column;
+            .how-we-work-content {
+                width: 100%;
+            }
+            .how-we-work-features {
+                width: 100%;
+                padding-top: 4rem;
+                .feature {
+                    .h1 {
+                        margin-right: 3.6rem;
+                    }
                 }
             }
         }
