@@ -201,8 +201,8 @@ html {
 }
 
 .container {
-  padding: 0 5%;
   max-width: 1170px;
+  padding: 0 5%;
   margin: 0 auto;
   box-sizing: content-box;
 }
@@ -222,6 +222,7 @@ html {
 }
 #portfolio {
   background-color: #28293e;
+  padding-bottom: 17.6rem;
 }
 #portfolio header {
   display: flex;
@@ -367,6 +368,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 #portfolio .portfolio-section-statistic .portfolio-section-statistic-imgAbsolute {
   position: absolute;
@@ -379,6 +381,7 @@ html {
 #portfolio .portfolio-section-statistic .portfolio-section-statistic-left h5 {
   color: #ef6958;
   margin-bottom: 1.3rem;
+  font-weight: 400;
 }
 #portfolio .portfolio-section-statistic .portfolio-section-statistic-left h4 {
   color: #391400;
@@ -400,6 +403,7 @@ html {
 }
 #portfolio .portfolio-section-statistic .portfolio-section-statistic-center img {
   margin-top: 4rem;
+  width: 100%;
 }
 #portfolio .portfolio-section-statistic .portfolio-section-statistic-right :last-child {
   position: absolute;
@@ -434,6 +438,7 @@ html {
 }
 #portfolio .portfolio-section-events .portfolio-section-events-main {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
   margin-bottom: 6.4rem;
@@ -473,6 +478,7 @@ html {
 }
 #portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-down img {
   margin-right: 0.8rem;
+  width: 100%;
 }
 #portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-down span {
   color: #ffffff;
@@ -524,6 +530,7 @@ html {
   color: #ef6958;
   line-height: 3.2;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 #portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header h2 {
   line-height: 6.4rem;
@@ -551,6 +558,7 @@ html {
 }
 #portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs {
   display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 #portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs .card {
@@ -591,4 +599,55 @@ html {
   margin-right: 2rem;
   width: 1.2rem;
   height: 1.2rem;
+}
+#portfolio .portfolio-section-founder {
+  display: flex;
+  flex-wrap: wrap;
+}
+#portfolio .portfolio-section-founder div:first-child {
+  flex-grow: 1;
+}
+#portfolio .portfolio-section-founder div:last-child {
+  position: relative;
+  padding-left: 13rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#portfolio .portfolio-section-founder div:last-child img {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+#portfolio .portfolio-section-founder div:last-child h5 {
+  color: #ef6958;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 3.3rem;
+}
+#portfolio .portfolio-section-founder div:last-child h3 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  margin-bottom: 4.4rem;
+}
+#portfolio .portfolio-section-founder div:last-child span {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+#portfolio .portfolio-section-founder div:last-child :last-child {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+@media (max-width: 768px) {
+  .portfolio-section-upBox,
+.portfolio-section-downBox {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
