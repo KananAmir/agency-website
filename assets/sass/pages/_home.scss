@@ -1,0 +1,109 @@
+#banner {
+    background-color: $bg_banner;
+    padding: 6rem 0 4rem;
+    background-image: url("/assets/");
+    .banner {
+        display: flex;
+        column-gap: 8rem;
+        .banner-content {
+            width: 50%;
+            h5 {
+                color: $primary-color;
+                font-weight: 400;
+                letter-spacing: 3px;
+                margin: 2rem 0;
+            }
+            .title {
+                color: $white;
+            }
+            .description {
+                font-size: 1.6rem;
+                color: $white;
+                opacity: 64%;
+                font-weight: 400;
+                line-height: 3.2rem;
+                margin: 3rem 0;
+                max-width: 470px;
+            }
+            .how-we-work {
+                .how-we-work-btn {
+                    background-color: $primary_color;
+                    border: none;
+                    color: $white;
+                }
+                .contact-us-btn {
+                    background-color: transparent;
+                    border: none;
+                    color: $white;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+            .banner-quote {
+                display: flex;
+                margin-top: 8rem;
+                img {
+                    margin-right: 2rem;
+                }
+                .quote-info {
+                    .quote-text {
+                        font-size: 1.6rem;
+                        color: $white;
+                        opacity: 64%;
+                        font-weight: 400;
+                        margin-bottom: 1rem;
+                    }
+                    .quote-owner {
+                        color: $white;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .banner-image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #banner {
+        padding: 3rem;
+        .banner {
+            display: flex;
+            column-gap: 5rem;
+            .banner-content {
+                .banner-quote {
+                    margin-top: 5rem;
+                }
+            }
+            .banner-image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        padding: 2rem;
+        .banner {
+            display: flex;
+            flex-direction: column;
+            .banner-content {
+                width: 100%;
+                order: 2;
+            }
+            .banner-image {
+                width: 100%;
+            }
+        }
+    }
+}

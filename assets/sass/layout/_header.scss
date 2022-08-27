@@ -1,20 +1,41 @@
 #header {
     background-color: $bg_banner;
-    padding: 1rem 0;
+    padding: 1.6rem 0;
     .header {
         @include flexCenter(space-between);
         nav {
             @include flexCenter;
             ul {
-                @include flexCenter;
+                width: 515px;
+                @include flexCenter(space-between);
                 li {
                     a {
                         color: $white;
                         text-decoration: none;
-                        margin: 0 3rem;
                         font-size: 1.6rem;
                     }
                 }
+            }
+        }
+        .contact-btn {
+            background: transparent;
+            color: $white;
+            border: 1px solid rgba(255, 255, 255, 0.295743);
+        }
+        .menu-icon {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .header {
+            @include flexCenter(space-between);
+            nav,
+            .contact-btn {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
             }
         }
     }
