@@ -205,6 +205,7 @@
             width: 50%;
             padding-top: 8rem;
             .feature {
+                color: $text_dark;
                 @include flexCenter(flex-start);
                 .h1 {
                     margin-right: 6.6rem;
@@ -218,7 +219,53 @@
         }
     }
 }
-
+#video-reel {
+    background-color: $bg_color;
+    padding: 8rem 0 4rem;
+    .video-reel {
+        display: flex;
+        column-gap: 8rem;
+        .video-reel-image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .play-icon {
+                width: 148px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .video-reel-content {
+            width: 50%;
+            @include flexCenter;
+            .center {
+                h5 {
+                    color: #ef6d58;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 400;
+                }
+                h3 {
+                    color: $text_dark;
+                    margin: 1.5rem 0;
+                }
+                .video-reel-description {
+                    color: $text_dark;
+                    opacity: 64%;
+                    font-size: 1.6rem;
+                    line-height: 3.2rem;
+                    max-width: 470px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1024px) {
     #banner {
         padding: 3rem 0;
@@ -329,6 +376,19 @@
                         margin-right: 3.6rem;
                     }
                 }
+            }
+        }
+    }
+    #video-reel {
+        padding: 4rem 0 2rem;
+        .video-reel {
+            flex-direction: column;
+            .video-reel-image {
+                width: 100%;
+            }
+            .video-reel-content {
+                width: 100%;
+                padding-top: 3rem;
             }
         }
     }
