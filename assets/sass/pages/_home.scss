@@ -70,10 +70,22 @@
         }
     }
 }
+#partners {
+    background-color: $bg_color;
+    .partners {
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+        padding: 8rem 0;
+        border-bottom: 0.1rem solid #f3d1bf;
+        img {
+            margin: 1rem 1rem 0;
+        }
+    }
+}
 
 @media (max-width: 1024px) {
     #banner {
-        padding: 3rem;
+        padding: 3rem 0;
         .banner {
             display: flex;
             column-gap: 5rem;
@@ -89,11 +101,16 @@
             }
         }
     }
+    #partners {
+        .partners {
+            padding: 5rem 0;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     #banner {
-        padding: 2rem;
+        padding: 2rem 0;
         .banner {
             display: flex;
             flex-direction: column;
@@ -104,6 +121,11 @@
             .banner-image {
                 width: 100%;
             }
+        }
+    }
+    #partners {
+        .partners {
+            padding: 3rem 0;
         }
     }
 }

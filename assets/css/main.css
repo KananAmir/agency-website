@@ -329,9 +329,24 @@ html {
   width: 100%;
 }
 
+#partners {
+  background-color: #fdf0e9;
+}
+#partners .partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8rem 0;
+  border-bottom: 0.1rem solid #f3d1bf;
+}
+#partners .partners img {
+  margin: 1rem 1rem 0;
+}
+
 @media (max-width: 1024px) {
   #banner {
-    padding: 3rem;
+    padding: 3rem 0;
   }
   #banner .banner {
     display: flex;
@@ -343,10 +358,13 @@ html {
   #banner .banner .banner-image img {
     width: 100%;
   }
+  #partners .partners {
+    padding: 5rem 0;
+  }
 }
 @media (max-width: 768px) {
   #banner {
-    padding: 2rem;
+    padding: 2rem 0;
   }
   #banner .banner {
     display: flex;
@@ -358,5 +376,8 @@ html {
   }
   #banner .banner .banner-image {
     width: 100%;
+  }
+  #partners .partners {
+    padding: 3rem 0;
   }
 }/*# sourceMappingURL=main.css.map */
