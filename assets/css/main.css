@@ -347,7 +347,8 @@ html {
   justify-content: center;
   align-items: center;
 }
-#portfolio .portfolio-section-head .portfolio-section-btnBox button {
+#portfolio .portfolio-section-head .portfolio-section-btnBox button,
+#portfolio .portfolio-section-head .portfolio-section-btnBox .eventsBTN {
   font-weight: 900;
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -409,6 +410,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 14rem;
 }
 #portfolio .portfolio-section-events .portfolio-section-events-header {
   display: flex;
@@ -434,15 +436,159 @@ html {
   display: flex;
   gap: 3rem;
   justify-content: center;
+  margin-bottom: 6.4rem;
 }
 #portfolio .portfolio-section-events .portfolio-section-events-main .card {
   display: flex;
   flex-direction: column;
+  border: 0.1rem solid #3a3c56;
+  padding: 3.6rem 4rem;
+  width: 37rem;
 }
 #portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header {
   display: flex;
   flex-direction: column;
+  border-bottom: 0.1rem solid #3a3c56;
 }
-#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header-up {
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-up {
   display: flex;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-up h1 {
+  color: #ffffff;
+  font-weight: 800;
+  margin-right: 1.2rem;
+  line-height: 8rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-up h4 {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-down {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.6rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-down img {
+  margin-right: 0.8rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-header .card-header-down span {
+  color: #ffffff;
+  line-height: 3.2rem;
+  font-size: 1.6rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-footer h4 {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 3.2rem;
+  margin-bottom: 1.9rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-footer p {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  margin-bottom: 2.6rem;
+}
+#portfolio .portfolio-section-events .portfolio-section-events-main .card .card-footer span {
+  color: White;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+#portfolio .portfolio-section-events button {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: white;
+  padding: 1.8rem 3rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0.6rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2957);
+}
+#portfolio .portfolio-section-ourTeam {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header {
+  margin-bottom: 6.4rem;
+  position: relative;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header h5 {
+  color: #ef6958;
+  line-height: 3.2;
+  margin-bottom: 2rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header h2 {
+  line-height: 6.4rem;
+  letter-spacing: -0.1rem;
+  color: #ffffff;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header .absolut-controller {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-header .absolut-controller span {
+  padding: 1.9rem;
+  font-size: 0.9rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #ffffff;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2957);
+  border-radius: 50%;
+  margin-left: 1.6rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider {
+  display: flex;
+  flex-direction: column;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs {
+  display: flex;
+  gap: 3rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.6rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs .card .card-img {
+  border: 0.1rem solid #3a3c56;
+  width: 27rem;
+  height: 27.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2.6rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs .card h4 {
+  line-height: 3.2rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-imgs .card span {
+  line-height: 3.2rem;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-control {
+  display: flex;
+  justify-content: center;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-control :first-child {
+  background-color: #ef6958;
+  border: 0.1rem solid #ef6958;
+}
+#portfolio .portfolio-section-ourTeam .portfolio-section-ourTeam-slider .portfolio-section-ourTeam-slider-control span {
+  border-radius: 50%;
+  border: 0.1rem solid #4e4f6e;
+  margin-right: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
