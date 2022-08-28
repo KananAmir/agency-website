@@ -640,6 +640,7 @@ html {
   color: #391400;
   font-weight: 700;
   margin-bottom: 1.3rem;
+  font-size: 2.4rem;
 }
 #features-details .features-details .features-details-more .features-details-more-content .features-details-more-content-box p {
   font-size: 2rem;
@@ -762,12 +763,18 @@ html {
 #service-areas .service-areas-content .service-areas-content-box .icon {
   height: 8rem;
   width: 8rem;
+  background-color: #ef6958;
+  border-radius: 50%;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #service-areas .service-areas-content .service-areas-content-box .h4 {
   color: #391400;
   font-weight: 700;
   margin-bottom: 1.3rem;
+  font-size: 2.4rem;
 }
 #service-areas .service-areas-content .service-areas-content-box p {
   font-size: 2rem;
