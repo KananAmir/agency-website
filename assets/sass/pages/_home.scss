@@ -1998,6 +1998,7 @@
       flex-direction: column;
       input {
         margin: 35px 0 16px 0;
+        width: calc(100vw - 20px);
       }
       button {
         margin: 0;
@@ -2048,3 +2049,106 @@
   }
 }
 // contact card box end
+// build your dream project start
+#build-your-dream-project {
+  background-color: #fdf0e9;
+  color: white;
+  padding-top: 130px;
+  padding-bottom: 90px;
+  padding-left: 100px;
+  padding-right: 70px;
+  .container {
+    padding: 0;
+  }
+  .project-box {
+    @include flexCenter;
+    background: #ef6d58;
+    border-radius: 6px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 70px;
+  }
+  .content-box {
+    width: 50%;
+    flex-grow: 2;
+    margin-right: 100px;
+    .h2 {
+      margin-bottom: 28px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 32px;
+      color: #ffffffa3;
+    }
+    button {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 14px;
+      background: #ffffff;
+      box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+      border-radius: 6px;
+      border: none;
+      width: 154px;
+      height: 48px;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: $text_dark;
+    }
+  }
+  img {
+    width: 35%;
+    flex-grow: 1;
+    display: block;
+  }
+}
+@media screen and(max-width:1024px) {
+  #build-your-dream-project {
+    background-color: #fdf0e9;
+    color: white;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .container {
+      padding: 0 5%;
+    }
+    .project-box {
+      @include flexCenter;
+      flex-direction: column-reverse;
+      background: #ef6d58;
+      border-radius: 6px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      padding-left: 100px;
+      padding-right: 70px;
+    }
+    .content-box {
+      width: 100%;
+      flex-grow: 2;
+      margin-right: 100px;
+      .h2 {
+        margin-bottom: 28px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 32px;
+      }
+      button {
+        font-weight: 900;
+      }
+    }
+    img {
+      width: 100%;
+      flex-grow: 1;
+      display: block;
+      margin-bottom: 37px;
+    }
+  }
+}
+
+// build your dream project end
