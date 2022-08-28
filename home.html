@@ -764,14 +764,26 @@
     <!-- newsletter end -->
     <!-- map start -->
     <section id="map">
-        <form action="#">
+        <div class="container">
+            <form class="mobil-form" action="#">
+                <div class="h4">Get In Touch</div>
+                <input type="text" placeholder="Your email">
+                <select name="" id="" >
+                    <option value="Subject">Subject</option>
+                </select>
+                <textarea  name="" id="" placeholder="Message"></textarea>
+                <button class="btn secondary-btn">Submit Now</button>
+            </form>
+            <form action="#" class="desktop-form">
             <div class="h4">Get In Touch</div>
-            <input type="text">
-            <select name="" id="">
-                <option value="khj"></option>
+            <input type="text" placeholder="Your email">
+            <select name="" id="" >
+                <option value="Subject">Subject</option>
             </select>
-            <textarea  name="" id="" cols="30" rows="10"></textarea>
+            <textarea  name="" id="" placeholder="Message"></textarea>
+            <button class="btn secondary-btn">Submit Now</button>
         </form>
+        </div>
     </section>
     <!-- map end -->
     <!-- contact card box start  -->
@@ -779,15 +791,48 @@
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    <img src="" alt="foto">
+                    <div class="card-img">
+                        <img src="./assets/images/home/CardPhoneIcon.svg" alt="foto">
+                    </div>
                     <div class="h5">Phone</div>
                 </div>
                 <div class="card-content">+1 (234) 567-89-00</div>
             </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-img">
+                        <img src="./assets/images/home/CardMailIcon.svg" alt="foto">
+                    </div>
+                    <div class="h5">Email</div>
+                </div>
+                <div class="card-content">info@agency.com</div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-img">
+                        <img src="./assets/images/home/CardCompasIcon.svg" alt="foto">
+                    </div>
+                    <div class="h5">Address</div>
+                </div>
+                <div class="card-content">2247 Lunetta Street, TX 76301</div>
+            </div>
         </div>
     </section>
     <!-- contact card box end -->
-
+    <!-- build your dream project start -->
+    <section id="build-your-dream-project">
+        <div class="container">
+           <div class="project-box">
+                <div class="content-box">
+                    <h2 class="h2">We’re Help To Build Your Dream Project</h2>
+                    <p>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+                    <button>Contact Us</button>
+                </div>
+                <img src="./assets/images/home/DreamProjectProfile.svg" alt="foto">
+            </div>
+        </div>
+    </section>
+    <!-- build your dream project end -->
 
 </body>
 
