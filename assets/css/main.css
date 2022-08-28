@@ -2240,15 +2240,9 @@ button {
   }
 }
 #map {
-  background-image: url("../images/home/mapBg.svg");
-  padding: 128px;
-  position: relative;
-  min-height: 700px;
+  background-color: #fdf0e9;
 }
-#map .desktop-form {
-  position: absolute;
-  top: 128px;
-  left: 5%;
+#map #mobilForm {
   padding: 48px;
   background: #FFFFFF;
   border-radius: 6px;
@@ -2257,9 +2251,11 @@ button {
   align-items: start;
   flex-direction: column;
   gap: 16px;
-  width: 470px;
+  max-width: 470px;
+  margin-bottom: 65px;
+  display: none;
 }
-#map .desktop-form input, #map .desktop-form select, #map .desktop-form textarea {
+#map #mobilForm input, #map #mobilForm select, #map #mobilForm textarea {
   width: 100%;
   box-sizing: border-box;
   resize: none;
@@ -2271,11 +2267,11 @@ button {
   line-height: 32px;
   color: rgba(57, 20, 0, 0.64);
 }
-#map .desktop-form .h4 {
+#map #mobilForm .h4 {
   color: #391400;
   font-weight: 700;
 }
-#map .desktop-form select {
+#map #mobilForm select {
   appearance: none;
   width: 100%;
   background-image: url(/assets/images/home/Triangle.svg);
@@ -2291,12 +2287,85 @@ button {
   padding: 0.9rem 1.6rem;
   padding-right: 1.6rem;
 }
-#map .desktop-form select option {
+#map #mobilForm select option {
   line-height: 3.2rem;
   margin-left: 1.6rem;
   color: rgba(57, 20, 0, 0.64);
 }
-#map .desktop-form button {
+#map #mobilForm button {
+  background: #EF6D58;
+  border-radius: 6px;
+  border: 0;
+  color: white;
+  align-self: end;
+}
+#map .map-box {
+  background-image: url("../images/home/mapBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 128px;
+  position: relative;
+  min-height: 700px;
+}
+#map .map-box img {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  height: 72px;
+  width: 72px;
+}
+#map .map-box form {
+  position: absolute;
+  top: 128px;
+  left: 5%;
+  padding: 48px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+  width: 470px;
+}
+#map .map-box form input, #map .map-box form select, #map .map-box form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  padding: 16px 9px;
+  border: 1px solid #F3D1BF;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+#map .map-box form .h4 {
+  color: #391400;
+  font-weight: 700;
+}
+#map .map-box form select {
+  appearance: none;
+  width: 100%;
+  background-image: url(/assets/images/home/Triangle.svg);
+  background-position-x: 98%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: rgba(57, 20, 0, 0.64);
+  padding: 0.9rem 1.6rem;
+  padding-right: 1.6rem;
+}
+#map .map-box form select option {
+  line-height: 3.2rem;
+  margin-left: 1.6rem;
+  color: rgba(57, 20, 0, 0.64);
+}
+#map .map-box form button {
   background: #EF6D58;
   border-radius: 6px;
   border: 0;
@@ -2305,8 +2374,15 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-  #map form {
+  #map #mobilForm {
+    display: block;
     padding: 48 28px;
+  }
+  #map .map-box form {
+    display: none;
+  }
+  #map .map-box img {
+    left: 50%;
   }
 }
 #contact-card-box {
