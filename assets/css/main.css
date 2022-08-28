@@ -861,6 +861,9 @@ html {
   align-items: center;
   padding: 0;
 }
+#newsletter .h3 {
+  color: #391400;
+}
 #newsletter .input-box input {
   box-sizing: border-box;
   width: 370px;
@@ -869,6 +872,7 @@ html {
   border: 1px solid #F3D1BF;
   border-radius: 6px;
   padding: 9px 16px;
+  color: rgba(57, 20, 0, 0.64);
 }
 #newsletter .input-box button {
   font-weight: 900;
@@ -883,6 +887,7 @@ html {
   width: 170px;
   height: 48px;
   margin-left: 30px;
+  color: #391400;
 }
 
 @media screen and (max-width: 1024px) {
@@ -907,4 +912,39 @@ html {
     flex-grow: 1;
     width: 100%;
   }
+}
+#map form {
+  padding: 48px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 470px;
+}
+#map form input, #map form select, #map form textarea {
+  width: 100%;
+  resize: none;
+  padding: 1px 2px;
+  border: 1px solid #F3D1BF;
+  border-radius: 6px;
+}
+#contact-card-box {
+  background-color: #fdf0e9;
+}
+#contact-card-box .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-card-box .card {
+  border: 1px solid #F3D1BF;
+  border-radius: 6px 0px 0px 6px;
+}
+#contact-card-box .card-content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }/*# sourceMappingURL=main.css.map */

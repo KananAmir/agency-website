@@ -615,6 +615,7 @@
             padding: 0;
         }
         .h3{
+            color: $text_dark;
         }
         .input-box{
             input{
@@ -625,6 +626,7 @@
                 border: 1px solid #F3D1BF;
                 border-radius: 6px;
                 padding:9px 16px;
+                color: rgba($text_dark,0.64);
             }
             button{
                 font-weight: 900;
@@ -639,6 +641,8 @@
                 width: 170px;
                 height: 48px;
                 margin-left: 30px;
+                color: $text_dark;
+
             }
         }
 }
@@ -664,3 +668,51 @@
     }
 }
 // newsletter end
+// map start
+#map{
+    form{
+        padding: 48px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        @include flexCenter;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 470px;
+        input,select,textarea{
+            width: 100%;
+            resize: none;
+            padding: 1px 2px;
+            border: 1px solid #F3D1BF;
+            border-radius: 6px;
+        }
+        .h4{
+
+        }
+        select{
+            
+        }
+    }
+}
+// map end
+// contact card box start
+#contact-card-box{
+    background-color: #fdf0e9;
+    .container{
+        @include flexCenter;
+    }
+    .card{
+        border: 1px solid #F3D1BF;
+        border-radius: 6px 0px 0px 6px;
+    }
+    .card-header{
+
+    }
+    .card-content{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+
+    }
+}
+// contact card box end
+
