@@ -1,0 +1,110 @@
+#footer {
+    background-color: $bg_color;
+    padding: 5rem 0;
+    .footer {
+        .footer-main {
+            padding-bottom: 4.5rem;
+            @include flexCenter(space-between, flex-start);
+            .logo {
+                .h4 {
+                    color: $text_dark;
+                    font-size: 2.4rem;
+                }
+            }
+            .menu,
+            .service {
+                .h5 {
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3rem;
+                    font-weight: 400;
+                    margin-bottom: 1.6rem;
+                }
+                nav {
+                    ul {
+                        li {
+                            margin: 1rem 0;
+                            a {
+                                color: $text_dark;
+                                text-decoration: none;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .social-icons {
+                display: flex;
+                .icon {
+                    height: 4.8rem;
+                    width: 4.8rem;
+                    background-color: $primary_color;
+                    border-radius: 50%;
+                    margin: 0 0.4rem;
+                    @include flexCenter;
+                }
+            }
+        }
+        .footer-copyright {
+            padding-top: 4.3rem;
+            border-top: 1px solid #f3d1bf;
+            @include flexCenter(space-between);
+            p {
+                color: $text_dark;
+                opacity: 64%;
+                font-size: 16px;
+                line-height: 3.2rem;
+            }
+            .terms-and-privacy {
+                ul {
+                    display: flex;
+                    li {
+                        a {
+                            color: $text_dark;
+                            text-decoration: none;
+                            font-size: 1.6rem;
+                        }
+                        &:last-child {
+                            margin-left: 6.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        .footer {
+            .footer-main {
+                align-items: center;
+                flex-direction: column;
+                .logo {
+                    margin: 2rem 0;
+                }
+                .menu,
+                .service {
+                    text-align: center;
+                    margin: 2rem 0;
+                    nav {
+                        ul {
+                            text-align: center;
+                        }
+                    }
+                }
+                .social-icons {
+                    margin: 2rem 0;
+                }
+            }
+            .footer-copyright {
+                flex-direction: column;
+                @include flexCenter(center);
+                p {
+                    text-align: center;
+                    margin-bottom: 3.2rem;
+                }
+            }
+        }
+    }
+}
