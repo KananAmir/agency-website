@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header id="header">
+    <!-- <header id="header">
       <div class="container">
         <div class="header">
           <img src="./assets/images/home/logo.svg" alt="logo" />
@@ -24,7 +24,7 @@
           <button class="contact btn primary-btn">Contact</button>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- Portfolio Section -->
     <section id="portfolio">
       <div class="container">
@@ -39,13 +39,21 @@
             <li>Illustration <sup>3</sup></li>
             <li>Motion <sup>1</sup></li>
           </ul>
+          <select name="" id="">
+            <!-- <span>&#9660</span> -->
+            <option value="">Show All</option>
+            <option value="">Design</option>
+            <option value="">Branding</option>
+            <option value="">Illustration</option>
+            <option value="">Motion</option>
+          </select>
         </header>
         <section class="portfolio-section-head">
           <div class="portfolio-section-box">
             <div class="portfolio-section-upBox">
               <div class="portfolio-section-upBox-first">
-                <button class="">Design</button>
-                <h3 class="h3">SOFA</h3>
+                <button class="portfolio-section-box-btn">Design</button>
+                <h3 class="h3 portfolio-section-box-text">SOFA</h3>
               </div>
               <div class="portfolio-section-upBox-second">
                 <button class="">Branding</button>
@@ -111,7 +119,7 @@
                 </div>
                 <div class="card-header-down">
                   <img src="assets/images/home/time.svg" alt="" />
-                  <span>9:00 am – 3:00 pm</span>
+                  <span> 9:00 am – 3:00 pm</span>
                 </div>
               </div>
               <div class="card-footer">
@@ -217,8 +225,14 @@
         </section>
         <!-- Portfolio Section Founder-->
         <section class="portfolio-section-founder">
-          <div><img src="assets/images/home/founder.svg" alt="" /></div>
           <div>
+            <img
+              class="portfolio-section-founder-photo"
+              src="assets/images/home/founder.svg"
+              alt=""
+            />
+          </div>
+          <div class="portfolio-section-founder-text">
             <img src="assets/images/home/scop.svg" alt="" />
             <h5 class="h5">Founder Words</h5>
             <h3 class="h3">
