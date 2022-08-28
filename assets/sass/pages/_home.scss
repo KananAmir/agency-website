@@ -2034,8 +2034,8 @@
 // contact card box start
 #contact-card-box {
   background-color: #fdf0e9;
-  .container {
-    @include flexCenter;
+  #contact-card-box-container {
+    @include flexCenter(center, stretch);
   }
   .card {
     border: 1px solid #f3d1bf;
