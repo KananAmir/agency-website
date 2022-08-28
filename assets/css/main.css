@@ -516,6 +516,7 @@ button {
   background-color: #fdf0e9;
 }
 #map #mobilForm {
+  margin: 0 auto 6.5rem auto;
   padding: 48px;
   background: #ffffff;
   border-radius: 6px;
@@ -523,10 +524,10 @@ button {
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  gap: 16px;
   max-width: 470px;
   margin-bottom: 65px;
   display: none;
+  gap: 16px;
 }
 #map #mobilForm input,
 #map #mobilForm select,
@@ -541,6 +542,7 @@ button {
   font-size: 16px;
   line-height: 32px;
   color: rgba(57, 20, 0, 0.64);
+  margin: 1rem 0;
 }
 #map #mobilForm .h4 {
   color: #391400;
@@ -650,18 +652,6 @@ button {
   align-self: end;
 }
 
-@media screen and (max-width: 1024px) {
-  #map #mobilForm {
-    display: block;
-    padding: 48 28px;
-  }
-  #map .map-box form {
-    display: none;
-  }
-  #map .map-box img {
-    left: 50%;
-  }
-}
 @media (max-width: 768px) {
   #contact-card-box .container {
     display: flex;
@@ -679,6 +669,16 @@ button {
   #faq .frequenly-questions-box,
 #faq .collapse-box {
     width: 100%;
+  }
+  #map #mobilForm {
+    display: block;
+    padding: 48 28px;
+  }
+  #map .map-box form {
+    display: none;
+  }
+  #map .map-box img {
+    left: 50%;
   }
 }
 #banner {
@@ -1080,6 +1080,7 @@ button {
   height: 8rem;
   width: 8rem;
   background-color: #ef6958;
+  transition: 0.5s;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -2998,13 +2999,13 @@ button {
   #services-servicesInfo .servicesInfo-footer .collapse-item .collapse-item-footer .features-content .center h3 {
     font-size: 2.4rem;
   }
-}
-#services-servicesInfo .servicesInfo-footer .headText {
-  display: block;
-  font-size: 3.8rem;
-}
-#services-servicesInfo .servicesInfo-footer .headTextBlock {
-  display: none;
+  #services-servicesInfo .servicesInfo-footer .headText {
+    display: block;
+    font-size: 3.8rem;
+  }
+  #services-servicesInfo .servicesInfo-footer .headTextBlock {
+    display: none;
+  }
 }
 
 #build-your-dream-project-services {

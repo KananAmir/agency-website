@@ -199,6 +199,7 @@
     //   }
     // }
   }
+
   @media (max-width: 768px) {
     .servicesInfo-footer .collapse-item .collapse-item-header div .iconBG {
       margin-right: 1rem;
@@ -210,15 +211,14 @@
         font-size: 2.4rem;
       }
     }
-  }
-  .servicesInfo-footer {
-    .headText {
-      display: block;
-
-      font-size: 3.8rem;
-    }
-    .headTextBlock {
-      display: none;
+    .servicesInfo-footer {
+      .headText {
+        display: block;
+        font-size: 3.8rem;
+      }
+      .headTextBlock {
+        display: none;
+      }
     }
   }
 }
