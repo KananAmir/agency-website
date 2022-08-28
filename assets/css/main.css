@@ -2464,7 +2464,7 @@ html {
 }
 @media (max-width: 768px) {
   #services-servicesInfo .servicesInfo-footer .collapse-item .collapse-item-header div .iconBG {
-    margin-right: 0.2rem;
+    margin-right: 1rem;
   }
   #services-servicesInfo .servicesInfo-footer .collapse-item .collapse-item-footer .features-content .center {
     width: 100%;
@@ -2475,7 +2475,101 @@ html {
 }
 #services-servicesInfo .servicesInfo-footer .headText {
   display: block;
+  font-size: 3.8rem;
 }
 #services-servicesInfo .servicesInfo-footer .headTextBlock {
   display: none;
+}
+
+#build-your-dream-project-services {
+  background-color: #fdf0e9;
+  color: white;
+}
+#build-your-dream-project-services .project-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ef6d58;
+  border-radius: 6px;
+  padding: 3%;
+}
+#build-your-dream-project-services .content-box {
+  width: 50%;
+  flex-grow: 2;
+}
+#build-your-dream-project-services .content-box .h2 {
+  margin-bottom: 28px;
+}
+#build-your-dream-project-services .content-box p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.6392156863);
+}
+#build-your-dream-project-services .content-box button {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+  background: #ffffff;
+  box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+  border-radius: 6px;
+  border: none;
+  width: 154px;
+  height: 48px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #391400;
+}
+#build-your-dream-project-services img {
+  width: 50%;
+  flex-grow: 1;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  #build-your-dream-project {
+    background-color: #fdf0e9;
+    color: white;
+  }
+  #build-your-dream-project .project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: #ef6d58;
+    border-radius: 6px;
+  }
+  #build-your-dream-project .content-box {
+    width: 100%;
+    flex-grow: 2;
+  }
+  #build-your-dream-project .content-box .h2 {
+    margin-bottom: 28px;
+  }
+  #build-your-dream-project .content-box p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  #build-your-dream-project .content-box button {
+    font-weight: 900;
+  }
+  #build-your-dream-project img {
+    width: 100%;
+    flex-grow: 1;
+    display: block;
+    margin-bottom: 37px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #build-your-dream-project-services .project-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #build-your-dream-project-services .project-box .content-box {
+    margin-top: 3rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

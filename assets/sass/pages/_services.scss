@@ -200,10 +200,7 @@
   }
   @media (max-width: 768px) {
     .servicesInfo-footer .collapse-item .collapse-item-header div .iconBG {
-      margin-right: 0.2rem;
-    }
-    .servicesInfo-footer .collapse-item .collapse-item-header div h2 {
-      //   background-color: red;
+      margin-right: 1rem;
     }
 
     .servicesInfo-footer
@@ -220,6 +217,8 @@
   .servicesInfo-footer {
     .headText {
       display: block;
+
+      font-size: 3.8rem;
     }
     .headTextBlock {
       display: none;
@@ -228,3 +227,96 @@
 }
 
 // End Services Section Services Info
+// build your dream project start
+#build-your-dream-project-services {
+  background-color: #fdf0e9;
+  color: white;
+
+  .project-box {
+    @include flexCenter;
+    background: #ef6d58;
+    border-radius: 6px;
+    padding: 3%;
+  }
+  .content-box {
+    width: 50%;
+    flex-grow: 2;
+    .h2 {
+      margin-bottom: 28px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 32px;
+      color: #ffffffa3;
+    }
+    button {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 14px;
+      background: #ffffff;
+      box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+      border-radius: 6px;
+      border: none;
+      width: 154px;
+      height: 48px;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: $text_dark;
+    }
+  }
+  img {
+    width: 50%;
+    flex-grow: 1;
+    display: block;
+  }
+}
+@media screen and(max-width:1024px) {
+  #build-your-dream-project {
+    background-color: #fdf0e9;
+    color: white;
+
+    .project-box {
+      @include flexCenter;
+      flex-direction: column-reverse;
+      background: #ef6d58;
+      border-radius: 6px;
+    }
+    .content-box {
+      width: 100%;
+      flex-grow: 2;
+      .h2 {
+        margin-bottom: 28px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 32px;
+      }
+      button {
+        font-weight: 900;
+      }
+    }
+    img {
+      width: 100%;
+      flex-grow: 1;
+      display: block;
+      margin-bottom: 37px;
+    }
+  }
+}
+@media screen and(max-width:768px) {
+  #build-your-dream-project-services {
+    .project-box {
+      flex-direction: column;
+      align-items: flex-start;
+      .content-box {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+}
+// build your dream project end
