@@ -14,9 +14,10 @@
     margin-bottom: 2.4rem;
   }
   p {
-    max-width: 37rem;
+    max-width: 57rem;
     color: rgba(255, 255, 255, 0.64);
     text-align: center;
+    font-size: 1.6rem;
     line-height: 3.2rem;
   }
 }
@@ -135,7 +136,7 @@
       }
       &:hover {
         .collapse-item-footer {
-          height: 100%;
+          height: 55rem;
           overflow: hidden;
         }
         .upArrow {
@@ -198,30 +199,26 @@
     //   }
     // }
   }
+
   @media (max-width: 768px) {
     .servicesInfo-footer .collapse-item .collapse-item-header div .iconBG {
       margin-right: 1rem;
     }
 
-    .servicesInfo-footer
-      .collapse-item
-      .collapse-item-footer
-      .features-content
-      .center {
+    .servicesInfo-footer .collapse-item .collapse-item-footer .features-content .center {
       width: 100%;
       h3 {
         font-size: 2.4rem;
       }
     }
-  }
-  .servicesInfo-footer {
-    .headText {
-      display: block;
-
-      font-size: 3.8rem;
-    }
-    .headTextBlock {
-      display: none;
+    .servicesInfo-footer {
+      .headText {
+        display: block;
+        font-size: 3.8rem;
+      }
+      .headTextBlock {
+        display: none;
+      }
     }
   }
 }
@@ -236,11 +233,11 @@
     @include flexCenter;
     background: #ef6d58;
     border-radius: 6px;
-    padding: 3%;
+    padding: 10rem 9.6rem;
+    gap: 7rem;
   }
   .content-box {
     width: 50%;
-    flex-grow: 2;
     .h2 {
       margin-bottom: 28px;
     }
@@ -268,40 +265,44 @@
   }
   img {
     width: 50%;
-    flex-grow: 1;
     display: block;
   }
 }
-@media screen and(max-width:1024px) {
-  #build-your-dream-project {
+@media (max-width: 1024px) {
+  #build-your-dream-project-services {
     background-color: #fdf0e9;
     color: white;
-
     .project-box {
       @include flexCenter;
       flex-direction: column-reverse;
       background: #ef6d58;
       border-radius: 6px;
+      padding: 3%;
+      img {
+        order: 1;
+        margin-bottom: 0rem;
+      }
+      .content-box {
+        margin-top: 0rem;
+        width: 100%;
+        order: 2;
+        .h2 {
+          margin-bottom: 28px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          margin-bottom: 32px;
+        }
+        button {
+          font-weight: 900;
+        }
+      }
     }
-    .content-box {
-      width: 100%;
-      flex-grow: 2;
-      .h2 {
-        margin-bottom: 28px;
-      }
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        margin-bottom: 32px;
-      }
-      button {
-        font-weight: 900;
-      }
-    }
+
     img {
       width: 100%;
-      flex-grow: 1;
       display: block;
       margin-bottom: 37px;
     }
@@ -313,7 +314,6 @@
       flex-direction: column;
       align-items: flex-start;
       .content-box {
-        margin-top: 3rem;
         width: 100%;
       }
     }

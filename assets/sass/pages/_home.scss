@@ -393,6 +393,7 @@
               height: 8rem;
               width: 8rem;
               background-color: $primary_color;
+              transition: 0.5s;
               border-radius: 50%;
               @include flexCenter;
               .design {
@@ -1723,10 +1724,7 @@
     color: $text_dark;
     margin-bottom: 20px;
   }
-  hr {
-    background: #f3d1bf;
-    margin: 15px 0;
-  }
+
   .our-awards-row {
     @include flexCenter(space-between);
     & > div {
@@ -1820,6 +1818,7 @@
 // our blog start
 #our-blog {
   background-color: #fdf0e9;
+
   .h5 {
     color: #ef6d58;
     font-weight: 400;
@@ -1848,7 +1847,8 @@
   }
   .card-box {
     @include flexCenter(space-between);
-    margin-bottom: 68px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid #f3d1bf;
   }
   .card:nth-child(2) {
     margin: 0 15px;
@@ -1914,6 +1914,7 @@
     .card-box {
       @include flexCenter(space-between);
       flex-direction: column;
+      margin-bottom: 0rem;
     }
     .card:nth-child(2) {
       margin: 0 0 68px 0;
@@ -2011,43 +2012,214 @@
 // newsletter end
 // map start
 #map {
-  form {
+  background-color: #fdf0e9;
+  #mobilForm {
     padding: 48px;
     background: #ffffff;
     border-radius: 6px;
-    @include flexCenter;
+    @include flexCenter(start, start);
     flex-direction: column;
     gap: 16px;
     max-width: 470px;
+    margin-bottom: 65px;
+    display: none;
     input,
     select,
     textarea {
       width: 100%;
+      box-sizing: border-box;
       resize: none;
-      padding: 1px 2px;
+      padding: 16px 9px;
       border: 1px solid #f3d1bf;
       border-radius: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: rgba($text_dark, 0.64);
+    }
+    .h4 {
+      color: $text_dark;
+      font-weight: 700;
+    }
+    select {
+      appearance: none;
+      width: 100%;
+      background-image: url(/assets/images/home/Triangle.svg);
+      background-position-x: 98%;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 4.8rem;
+      border-radius: 0.6rem;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      color: rgba(57, 20, 0, 0.64);
+      padding: 0.9rem 1.6rem;
+      padding-right: 1.6rem;
+
+      option {
+        line-height: 3.2rem;
+        margin-left: 1.6rem;
+        color: rgba(57, 20, 0, 0.64);
+      }
+    }
+    button {
+      background: #ef6d58;
+      border-radius: 6px;
+      border: 0;
+      color: white;
+      align-self: end;
+    }
+  }
+  .map-box {
+    background-image: url("../images/home/mapBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 128px;
+    min-height: 600px;
+    #container-map {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    img {
+      height: 72px;
+      width: 72px;
+      position: static !important;
+      // margin-right: 30%;
+    }
+    form {
+      padding: 48px;
+      background: #ffffff;
+      border-radius: 6px;
+      @include flexCenter(start, start);
+      flex-direction: column;
+      gap: 16px;
+      width: 470px;
+      position: static !important;
+      input,
+      select,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        padding: 16px 9px;
+        border: 1px solid #f3d1bf;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba($text_dark, 0.64);
+      }
+      .h4 {
+        color: $text_dark;
+        font-weight: 700;
+      }
+      select {
+        appearance: none;
+        width: 100%;
+        background-image: url(/assets/images/home/Triangle.svg);
+        background-position-x: 98%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 4.8rem;
+        border-radius: 0.6rem;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        color: rgba(57, 20, 0, 0.64);
+        padding: 0.9rem 1.6rem;
+        padding-right: 1.6rem;
+
+        option {
+          line-height: 3.2rem;
+          margin-left: 1.6rem;
+          color: rgba(57, 20, 0, 0.64);
+        }
+      }
+      button {
+        background: #ef6d58;
+        border-radius: 6px;
+        border: 0;
+        color: white;
+        align-self: end;
+      }
     }
   }
 }
+@media screen and(max-width:1024px) {
+  #map {
+    #mobilForm {
+      display: flex;
+      padding: 48px 28px;
+      h4 {
+        margin-bottom: 2.3rem;
+        font-size: 2.4rem;
+      }
+    }
+    .map-box {
+      form {
+        display: none;
+      }
+      img {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
 // map end
 // contact card box start
 #contact-card-box {
+  padding-top: 80px;
   background-color: #fdf0e9;
+  padding-bottom: 13rem;
   .container {
-    @include flexCenter;
+    @include flexCenter(center, stretch);
   }
   .card {
+    width: 33%;
+    flex-grow: 1;
     border: 1px solid #f3d1bf;
     border-radius: 6px 0px 0px 6px;
+    padding: 32px 48px;
   }
-
+  .card-header {
+    @include flexCenter(start);
+    margin-bottom: 26px;
+    color: #ef6d58;
+    text-transform: uppercase;
+    .card-img {
+      background-color: #ef6d58;
+      border-radius: 50%;
+      padding: 20px;
+      margin-right: 24px;
+      @include flexCenter;
+    }
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
   .card-content {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
   }
 }
+@media screen and(max-width:1024px) {
+  #contact-card-box {
+    .container {
+      @include flexCenter;
+      flex-direction: column;
+    }
+    .card {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+}
+
 // contact card box end
 // build your dream project start
 #build-your-dream-project {

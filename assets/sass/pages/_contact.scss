@@ -137,15 +137,16 @@
 #map {
     background-color: #fdf0e9;
     #mobilForm {
+        margin: 0 auto 6.5rem auto;
         padding: 48px;
         background: #ffffff;
         border-radius: 6px;
         @include flexCenter(start, start);
         flex-direction: column;
-        gap: 16px;
         max-width: 470px;
         margin-bottom: 65px;
         display: none;
+        gap: 16px;
         input,
         select,
         textarea {
@@ -269,22 +270,6 @@
         }
     }
 }
-@media screen and(max-width:1024px) {
-    #map {
-        #mobilForm {
-            display: block;
-            padding: 48 28px;
-        }
-        .map-box {
-            form {
-                display: none;
-            }
-            img {
-                left: 50%;
-            }
-        }
-    }
-}
 // MOBILE VIEW
 @media (max-width: 768px) {
     #contact-card-box {
@@ -304,6 +289,20 @@
         .frequenly-questions-box,
         .collapse-box {
             width: 100%;
+        }
+    }
+    #map {
+        #mobilForm {
+            display: block;
+            padding: 48 28px;
+        }
+        .map-box {
+            form {
+                display: none;
+            }
+            img {
+                left: 50%;
+            }
         }
     }
 }
