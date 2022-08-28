@@ -1,0 +1,230 @@
+// Services Section Info
+#services-info {
+  background-color: $bg_banner;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 6.6rem;
+  h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: -0.2rem;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    max-width: 37rem;
+    color: rgba(255, 255, 255, 0.64);
+    text-align: center;
+    line-height: 3.2rem;
+  }
+}
+// responsive size
+@media (max-width: 768px) {
+  #services-info {
+    padding-top: 8rem;
+    padding-bottom: 8.7rem;
+
+    h1 {
+      margin-bottom: 1.2rem;
+    }
+    p {
+      padding: 0 5rem;
+    }
+  }
+}
+// End Services Section Info
+// Services Section Services Info
+#services-servicesInfo {
+  background-color: $bg_color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7.6rem;
+  .servicesInfo-header {
+    display: flex;
+    border-bottom: 0.1rem solid #f3d1bf;
+    padding-bottom: 9.7rem;
+    .servicesInfo-header-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      //   padding-right: 13rem;
+      h5 {
+        color: $primary-color;
+        letter-spacing: 0.3rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        margin-bottom: 3.3rem;
+      }
+      h3 {
+        width: 100%;
+        color: $text_dark;
+        line-height: 4.8rem;
+        font-weight: 900;
+        max-width: 47rem;
+      }
+    }
+    .servicesInfo-header-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        color: rgba(57, 20, 0, 0.64);
+        margin-top: 7rem;
+      }
+    }
+  }
+  .servicesInfo-footer {
+    .faq-box {
+      @include flexCenter(center, baseline);
+    }
+
+    .collapse-box {
+      transition: all 500ms;
+    }
+    .collapse-item {
+      transition: all 500ms;
+      .collapse-item-footer {
+        height: 0;
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        transition: 500ms;
+        .features-content {
+          display: flex;
+          justify-content: flex-end;
+          border-bottom: 0.1rem solid #f3d1bf;
+          padding-bottom: 10.2rem;
+          .center {
+            width: 50%;
+
+            h3 {
+              color: $text_dark;
+              line-height: 4.8rem;
+              font-weight: 900;
+              margin-top: 7.6rem;
+            }
+            .center-text {
+              font-size: 1.6rem;
+              line-height: 3.2rem;
+              margin-top: 2.8rem;
+              color: #391400;
+              margin-bottom: 4.5rem;
+            }
+            .features-list-item {
+              display: flex;
+              align-items: center;
+              margin-top: 1.6rem;
+              img {
+                margin-right: 2.3rem;
+              }
+              p {
+                margin-top: 0rem;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .collapse-item-footer {
+          height: 100%;
+          overflow: hidden;
+        }
+        .upArrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .collapse-item-header {
+      @include flexCenter(space-between, center);
+      border-bottom: 0.1rem solid #f3d1bf;
+      padding: 5.9rem 0rem 5.2rem;
+      cursor: pointer;
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .iconBG {
+          width: 8rem;
+          height: 8rem;
+          @include flexCenter;
+          background-color: $primary-color;
+          border-radius: 50%;
+          margin-right: 3.6rem;
+        }
+      }
+      img {
+        height: 32px;
+        transition: 500ms;
+      }
+    }
+    .headTextBlock {
+      display: block;
+    }
+    .headText {
+      display: none;
+    }
+  }
+  @media (max-width: 1024px) {
+    .servicesInfo-header {
+      flex-direction: column;
+      .servicesInfo-header-left,
+      .servicesInfo-header-right {
+        width: 100%;
+        h3 {
+          font-size: 4rem;
+          max-width: 100%;
+        }
+        p {
+          margin-top: 2.8rem;
+        }
+      }
+    }
+    // #faq {
+    //   .faq-box {
+    //     flex-direction: column;
+    //   }
+    //   .frequenly-questions-box,
+    //   .collapse-box {
+    //     width: 100%;
+    //   }
+    // }
+  }
+  @media (max-width: 768px) {
+    .servicesInfo-footer .collapse-item .collapse-item-header div .iconBG {
+      margin-right: 0.2rem;
+    }
+    .servicesInfo-footer .collapse-item .collapse-item-header div h2 {
+      //   background-color: red;
+    }
+
+    .servicesInfo-footer
+      .collapse-item
+      .collapse-item-footer
+      .features-content
+      .center {
+      width: 100%;
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .servicesInfo-footer {
+    .headText {
+      display: block;
+    }
+    .headTextBlock {
+      display: none;
+    }
+  }
+}
+
+// End Services Section Services Info
