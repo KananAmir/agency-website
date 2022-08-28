@@ -289,6 +289,7 @@
     h5{
         color:#EF6D58 ;
         margin-bottom: 17px;
+        font-weight: 400;
     }
     .faq-box{
         @include flexCenter(center,baseline);
@@ -383,8 +384,12 @@
     }
     .our-awards-row{
         @include flexCenter(space-between);
+        &>div{
+            flex-grow: 1;
+            width: 33%;
+        }
         .our-awards-row-item{
-            @include flexCenter;
+            @include flexCenter(start);
             color: $text_dark;
             p{
                 font-weight: 400;
@@ -400,14 +405,13 @@
         .our-awards-row-date{
             @include flexCenter;
             color: rgba($text_dark,0.64);
-            p{
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 32px;
-            }
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;    
+            
         }
         .our-awards-row-award{
-            @include flexCenter;
+            @include flexCenter(end);
             p{
                 font-weight: 400;
                 font-size: 16px;
@@ -421,5 +425,184 @@
         }
         
     }
+    .explore{
+        margin-top: 60px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba($text_dark,0.64);
+        cursor: pointer;
+        span{
+        color: $text_dark;
+        margin-left: 8px;
+        }
+    }
+}
+@media screen and(max-width:1024px){
+    #our-awards{
+        hr{
+            margin: 30px 0;
+        }
+        .our-awards-row{
+            @include flexCenter(space-between);
+            flex-direction: column;
+            &>div{
+                flex-grow: 1;
+                width: 100%;
+                flex-direction: column;
+            }
+            .our-awards-row-item{
+                @include flexCenter;
+                color: $text_dark;
+                img{
+                    margin-right: 0px;
+                }
+            }
+            .our-awards-row-date{
+                @include flexCenter; 
+                
+            }
+            .our-awards-row-award{
+                @include flexCenter;
+                img{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
 }
 // our awards end 
+// our blog start 
+#our-blog{
+    background-color: #fdf0e9;
+    .h5{
+        color: #EF6D58;
+        font-weight: 400;
+    }
+    .our-blog-header{
+        @include flexCenter(space-between,flex-end);
+        padding-bottom: 64px;
+        .h2{
+            font-weight: 800;
+            max-width: 335px;
+        }
+        button{
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $text_dark;
+            height: 48px;
+            width: 170px;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+            border-radius: 6px;
+            border: none;
+        }
+    }
+    .card-box{
+        @include flexCenter(space-between);
+        margin-bottom: 68px;
+    }
+    .card:nth-child(2){
+        margin: 0 15px;
+    }
+    .card{
+        width: 33%;
+        flex-grow: 1;
+        color: $text_dark;
+        img{
+            width: 100%;
+            margin-bottom: 26px;
+        }
+        .title{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+        .h4{
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .date{
+            font-weight: 400;
+            color: rgba($text_dark,0.64);
+        }
+    }
+    hr{
+        background: #F3D1BF;
+        margin-bottom: 60px;
+    }
+}
+@media screen and(max-width:1024px){
+    #our-blog{
+        background-color: #fdf0e9;
+        .h5{
+            color: #EF6D58;
+            font-weight: 400;
+        }
+        .our-blog-header{
+            @include flexCenter(start,start);
+            flex-direction: column;
+            padding-bottom: 64px;
+            .h2{
+                font-weight: 800;
+                margin-bottom: 35px;
+            }
+            button{
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $text_dark;
+                height: 48px;
+                width: 170px;
+                background: #FFFFFF;
+                box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+                border-radius: 6px;
+                border: none;
+            }
+        }
+        .card-box{
+            @include flexCenter(space-between);
+            flex-direction: column;
+            
+        }
+        .card:nth-child(2){
+            margin: 0 0 68px 0;
+        }
+        .card{
+            width: 100%;
+            flex-grow: 1;
+            color: $text_dark;
+            margin-bottom: 68px;
+            img{
+                width: 100%;
+                margin-bottom: 26px;
+            }
+            .title{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 15px;
+            }
+            .h4{
+                margin-bottom: 15px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .date{
+                font-weight: 400;
+                color: rgba($text_dark,0.64);
+            }
+        }
+    }
+}
+// our blog end 
