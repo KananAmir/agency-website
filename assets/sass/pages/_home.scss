@@ -70,7 +70,7 @@
         margin-bottom: 3.2rem;
         .portfolio-section-upBox-first,
         .portfolio-section-upBox-second {
-          background-image: url(/assets/images/home/sofa.svg);
+          background-image: url("../images/home/sofa.svg");
           background-size: cover;
           background-repeat: no-repeat;
           flex-grow: 4;
@@ -100,7 +100,7 @@
           }
         }
         .portfolio-section-upBox-second {
-          background-image: url(/assets/images/home/keyboard.svg);
+          background-image: url("../images/home/keyboard.svg");
           flex-grow: 6;
         }
       }
@@ -109,7 +109,7 @@
         gap: 3rem;
         .portfolio-section-downBox-first,
         .portfolio-section-downBox-second {
-          background-image: url(/assets/images/home/work-media.svg);
+          background-image: url("../images/home/work-media.svg");
           flex-grow: 6;
           background-size: cover;
           background-repeat: no-repeat;
@@ -138,7 +138,7 @@
           }
         }
         .portfolio-section-downBox-second {
-          background-image: url(/assets/images/home/dddone.svg);
+          background-image: url("../images/home/dddone.svg");
           flex-grow: 4;
         }
       }
