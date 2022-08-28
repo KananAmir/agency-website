@@ -2993,17 +2993,32 @@ button {
   margin-bottom: 65px;
   display: none;
 }
-#map form input,
-#map form select,
-#map form textarea {
+#map #mobilForm input,
+#map #mobilForm select,
+#map #mobilForm textarea {
   width: 100%;
   box-sizing: border-box;
   resize: none;
   padding: 16px 9px;
   border: 1px solid #f3d1bf;
   border-radius: 6px;
+  border: 0;
+  color: white;
+  align-self: end;
 }
 
+@media screen and (max-width: 1024px) {
+  #map #mobilForm {
+    display: block;
+    padding: 48 28px;
+  }
+  #map .map-box form {
+    display: none;
+  }
+  #map .map-box img {
+    left: 50%;
+  }
+}
 #contact-card-box {
   padding-top: 80px;
   background-color: #fdf0e9;
