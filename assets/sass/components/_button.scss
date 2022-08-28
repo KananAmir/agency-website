@@ -1,7 +1,11 @@
 .btn {
-  border-radius: 6px;
-  font-size: 14px;
-  text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .primary-btn {
