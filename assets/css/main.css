@@ -1967,6 +1967,7 @@ button {
 #what-our-clients-say {
   background-color: #fdf0e9;
   text-align: center;
+  padding-top: 12.4rem;
 }
 #what-our-clients-say .h2 {
   max-width: 394px;
@@ -2057,6 +2058,9 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
+  #what-our-clients-say {
+    padding-top: 9.2rem;
+  }
   #what-our-clients-say .card-box {
     display: flex;
     justify-content: center;
@@ -2348,6 +2352,9 @@ button {
   color: #391400;
   margin-bottom: 20px;
 }
+#our-awards hr {
+  border-top: 1px solid #f3d1bf;
+}
 #our-awards .our-awards-row {
   display: flex;
   justify-content: space-between;
@@ -2603,9 +2610,13 @@ button {
 #newsletter .h3 {
   color: #391400;
 }
+#newsletter .input-box {
+  display: flex;
+  justify-content: flex-end;
+}
 #newsletter .input-box input {
   box-sizing: border-box;
-  width: 370px;
+  width: 370px !important;
   height: 48px;
   background: #ffffff;
   border: 1px solid #f3d1bf;
@@ -2629,23 +2640,26 @@ button {
   color: #391400;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  #newsletter {
+    padding: 5%;
+  }
   #newsletter .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 0;
   }
   #newsletter .input-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 47rem;
     flex-direction: column;
   }
   #newsletter .input-box input {
     margin: 35px 0 16px 0;
-    width: calc(100vw - 5%);
+    width: 100% !important;
   }
   #newsletter .input-box button {
     margin: 0;
@@ -2731,6 +2745,7 @@ button {
   height: 72px;
   width: 72px;
   position: static !important;
+  margin-right: 2rem;
 }
 #map .map-box form {
   padding: 48px;

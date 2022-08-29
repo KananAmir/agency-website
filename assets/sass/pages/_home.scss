@@ -1353,6 +1353,7 @@
 #what-our-clients-say {
   background-color: #fdf0e9;
   text-align: center;
+  padding-top: 12.4rem;
   .h2 {
     max-width: 394px;
     color: $text_dark;
@@ -1439,6 +1440,8 @@
 }
 @media screen and(max-width:1024px) {
   #what-our-clients-say {
+    padding-top: 9.2rem;
+
     .card-box {
       @include flexCenter(center, flex-start);
       flex-wrap: wrap;
@@ -1724,6 +1727,9 @@
     color: $text_dark;
     margin-bottom: 20px;
   }
+  hr {
+    border-top: 1px solid #f3d1bf;
+  }
 
   .our-awards-row {
     @include flexCenter(space-between);
@@ -1960,9 +1966,11 @@
     color: $text_dark;
   }
   .input-box {
+    display: flex;
+    justify-content: flex-end;
     input {
       box-sizing: border-box;
-      width: 370px;
+      width: 370px !important;
       height: 48px;
       background: #ffffff;
       border: 1px solid #f3d1bf;
@@ -1987,19 +1995,21 @@
     }
   }
 }
-@media screen and(max-width:1024px) {
+@media (max-width: 1024px) {
   #newsletter {
+    padding: 5%;
+
     .container {
       @include flexCenter(space-between);
       flex-direction: column;
-      padding: 0;
     }
     .input-box {
       @include flexCenter;
+      max-width: 47rem;
       flex-direction: column;
       input {
         margin: 35px 0 16px 0;
-        width: calc(100vw - 20px);
+        width: 100% !important;
       }
       button {
         margin: 0;
@@ -2087,6 +2097,7 @@
       width: 72px;
       position: static !important;
       // margin-right: 30%;
+      margin-right: 2rem;
     }
     form {
       padding: 48px;
